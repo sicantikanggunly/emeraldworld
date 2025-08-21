@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Emerald World — Frozen & Groceries</title>
+  <meta name="description" content="Toko frozen Emerald World: aneka makanan beku berkualitas, harga bersahabat.">
+  <link rel="stylesheet" href="css/styles.css"/>
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <div class="brand">
+        <div class="logo" aria-hidden="true"></div>
+        <div>
+          <div>Emerald World</div>
+          <div class="badge">Toko Frozen</div>
+        </div>
+      </div>
+      <button class="cart" id="openCart" aria-label="Buka Keranjang">
+        Keranjang <span class="cart-count" id="cartCount">0</span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero container">
+      <div class="wrap">
+        <div>
+          <h1>Segar, Praktis, & Lezat — <br/>Semua Ada di Emerald World</h1>
+          <p>Koleksi frozen food pilihan: mulai dari nugget, dumpling, sampai es krim favorit. Klik tambah ke keranjang lalu checkout, simple!</p>
+          <div class="cta">
+            <a class="btn" href="#produk">Lihat Produk</a>
+            <a class="btn secondary" href="#kritik-saran">Kritik & Saran</a>
+          </div>
+        </div>
+        <img alt="Produk unggulan Emerald World" src="assets/svg/icecream.svg"/>
+      </div>
+    </section>
+
+    <section class="section container" id="terlaris">
+      <h2>🔥 Produk Terlaris (Maks. 10)</h2>
+      <div class="slider" aria-label="Slider produk terlaris">
+        <div class="slides" id="slides"></div>
+        <button class="arrow left" id="prevSlide" aria-label="Sebelumnya">❮</button>
+        <button class="arrow right" id="nextSlide" aria-label="Berikutnya">❯</button>
+      </div>
+    </section>
+
+    <section class="section container" id="produk">
+      <h2>Semua Produk</h2>
+      <div class="grid" id="productGrid"></div>
+    </section>
+
+    <section class="section container" id="testimoni">
+      <h2>Testimoni Pelanggan</h2>
+      <div class="grid" id="testimonialList"></div>
+      <h3 style="margin-top:1rem">Tulis Testimoni Kamu</h3>
+      <form id="testimonialForm" aria-label="Form testimoni">
+        <label>Nama
+          <input required name="nama" placeholder="Nama kamu"/>
+        </label>
+        <label>Ulasan
+          <textarea required name="ulasan" rows="3" placeholder="Pengalaman belanja di Emerald World"></textarea>
+        </label>
+        <button class="btn" type="submit">Kirim Testimoni</button>
+      </form>
+    </section>
+
+    <section class="section container" id="kritik-saran">
+      <h2>Kritik & Saran</h2>
+      <form id="feedbackForm" aria-label="Form kritik dan saran">
+        <label>Email (opsional)
+          <input name="email" type="email" placeholder="email@contoh.com"/>
+        </label>
+        <label>Pesan
+          <textarea required name="pesan" rows="4" placeholder="Tulis masukan kamu di sini"></textarea>
+        </label>
+        <button class="btn" type="submit">Kirim Masukan</button>
+        <p class="small">*Terkirim akan disimpan di perangkat ini (demo). Untuk produksi, sambungkan ke endpoint backend/form.</p>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container wrap">
+      <div>
+        <div class="address">Alamat Toko</div>
+        <div>Jl. Dipenegori 74, Bogor</div>
+      </div>
+      <div class="small">© <span id="year"></span> Emerald World. All rights reserved.</div>
+      <a href="pages/checkout.html" class="btn">Checkout</a>
+    </div>
+  </footer>
+
+  <script src="js/app.js"></script>
+</body>
+</html>

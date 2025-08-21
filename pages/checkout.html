@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Checkout — Emerald World</title>
+  <link rel="stylesheet" href="../css/styles.css"/>
+  <style>.container{max-width:860px}</style>
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <a href="../index.html" class="brand" style="text-decoration:none;color:inherit">
+        <div class="logo"></div>
+        <div>
+          <div>Emerald World</div>
+          <div class="badge">Checkout</div>
+        </div>
+      </a>
+      <a class="btn" href="../index.html">Kembali</a>
+    </div>
+  </header>
+
+  <main class="section container">
+    <h1>Ringkasan Keranjang</h1>
+    <div id="cartItems" class="grid"></div>
+    <div style="display:flex;justify-content:space-between;align-items:center;margin-top:1rem">
+      <div class="price" id="cartTotal">Total: Rp0</div>
+      <button class="btn" id="placeOrder">Place Order</button>
+    </div>
+    <p class="small">*Demo tanpa pembayaran. Mengosongkan keranjang dan menampilkan pesan sukses.</p>
+  </main>
+
+  <script src="../js/app.js"></script>
+</body>
+</html>
